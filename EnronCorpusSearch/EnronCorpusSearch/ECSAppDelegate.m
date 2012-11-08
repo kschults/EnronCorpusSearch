@@ -25,12 +25,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    // Move the indices from Resources dir to app documents dir
     NSFileManager *fmngr = [[NSFileManager alloc] init];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"index/" ofType:nil];
     NSError *error;
     if(![fmngr copyItemAtPath:filePath toPath:[NSString stringWithFormat:@"%@/Documents/index/", NSHomeDirectory()] error:&error]) {
         // handle the error
-        
     }
     
     controller = [[ECSSearchController alloc] initWithNibName:@"ECSSearchController" bundle:[NSBundle mainBundle]];

@@ -9,6 +9,8 @@
 #import "ECSSearchController.h"
 #import <CommonCrypto/CommonDigest.h>
 
+#define NUM_DICTS 10
+
 @implementation ECSSearchController
 @synthesize searchBox;
 @synthesize resultsField;
@@ -57,19 +59,24 @@
     [searchBox resignFirstResponder];
     NSString* term = [searchBox text];
     unsigned char digest[CC_SHA1_DIGEST_LENGTH];
-    NSData *stringBytes = [term dataUsingEncoding: NSUTF8StringEncoding]; /* or some other encoding */
+    NSData *stringBytes = [term dataUsingEncoding: NSUTF8StringEncoding];
     if (CC_SHA1([stringBytes bytes], [stringBytes length], digest)) {
-        /* SHA-1 hash has been calculated and stored in 'digest'. */
+        
+        //Turn the sha1 digest into hex string
         NSMutableString *hex = [NSMutableString string];
         for (int i=0; i<CC_SHA1_DIGEST_LENGTH; i++) {
             [hex appendFormat:@"%02x", digest[i]];
         }
         NSString *hS = [hex substringToIndex:10]; //Use first half of the hash - we don't care about uniqueness
+        
+        //Turn hex string into int
         unsigned long long longVal;
         [[NSScanner scannerWithString:hS] scanHexLongLong:&longVal];
         
-        int dictNum = fmod(longVal, 10);
+        //Modulo operator
+        int dictNum = fmod(longVal, NUM_DICTS);
         
+        //Pull the appropriate index file
         NSFileManager *fm = [NSFileManager defaultManager];
         NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *docsDir = [dirPaths objectAtIndex:0];
@@ -78,9 +85,11 @@
         if ([fm fileExistsAtPath:dictToRead]) {
             NSData *data = [fm contentsAtPath:dictToRead];
             
+            //Map the index into a dictionary
             NSError *e;
             NSDictionary *mappings = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&e];
             
+            //Pull emails
             NSArray* emailIds = [mappings objectForKey:term];
             if (nil != emailIds) {
                 [resultsField setText:[emailIds componentsJoinedByString:@", "]];

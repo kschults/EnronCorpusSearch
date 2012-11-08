@@ -23,6 +23,8 @@ def process_email(email_id, email):
             if word in seen_words:
                 continue
             seen_words.add(word)
+
+            # Calculate hash, put into appropriate dict
             dictnum = hash_to_int(word) % NUM_DICTS
             emails = dicts[dictnum].get(word, None)
             if emails is None:
