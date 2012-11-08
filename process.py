@@ -15,7 +15,7 @@ def process_email(email_id, email):
         sha1 = hashlib.sha1(word)
         digest = sha1.hexdigest()
         number = int(digest[:10], 16) #Use only the first half so we can fit the result in a C type
-        return to_int64(number)
+        return number
 
     seen_words = set()
     for line in email:
@@ -37,8 +37,6 @@ for dirname, dirnames, filenames in os.walk(indir):
         filepath = os.path.join(dirname, filename)
         with open(filepath, 'r') as email:
             process_email(filename, email)
-        break
-    break
 
 written = 0
 for d in dicts:
