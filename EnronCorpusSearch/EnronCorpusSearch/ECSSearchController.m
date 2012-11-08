@@ -54,6 +54,7 @@
 }
 
 - (IBAction)search {
+    [searchBox resignFirstResponder];
     NSString* term = [searchBox text];
     unsigned char digest[CC_SHA1_DIGEST_LENGTH];
     NSData *stringBytes = [term dataUsingEncoding: NSUTF8StringEncoding]; /* or some other encoding */
@@ -88,5 +89,8 @@
             }
         }
     }
+}
+
+- (IBAction)asdf:(id)sender {
 }
 @end
