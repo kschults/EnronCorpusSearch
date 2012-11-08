@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C00AC085164B200100630982 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00AC084164B200100630982 /* UIKit.framework */; };
+		C00AC087164B200100630982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00AC086164B200100630982 /* Foundation.framework */; };
+		C00AC089164B200100630982 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00AC088164B200100630982 /* CoreGraphics.framework */; };
+		C00AC08F164B200100630982 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00AC08D164B200100630982 /* InfoPlist.strings */; };
+		C00AC091164B200100630982 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C00AC090164B200100630982 /* main.m */; };
+		C00AC095164B200100630982 /* ECSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C00AC094164B200100630982 /* ECSAppDelegate.m */; };
+		C00AC09E164B207E00630982 /* ECSSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00AC09C164B207E00630982 /* ECSSearchController.m */; };
+		C00AC09F164B207E00630982 /* ECSSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00AC09D164B207E00630982 /* ECSSearchController.xib */; };
+		C04DAD2E164B3635000F6ACE /* index in Resources */ = {isa = PBXBuildFile; fileRef = C04DAD2D164B3635000F6ACE /* index */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C00AC080164B200000630982 /* EnronCorpusSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnronCorpusSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00AC084164B200100630982 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C00AC086164B200100630982 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C00AC088164B200100630982 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C00AC08C164B200100630982 /* EnronCorpusSearch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EnronCorpusSearch-Info.plist"; sourceTree = "<group>"; };
+		C00AC08E164B200100630982 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C00AC090164B200100630982 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C00AC092164B200100630982 /* EnronCorpusSearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnronCorpusSearch-Prefix.pch"; sourceTree = "<group>"; };
+		C00AC093164B200100630982 /* ECSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECSAppDelegate.h; sourceTree = "<group>"; };
+		C00AC094164B200100630982 /* ECSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSAppDelegate.m; sourceTree = "<group>"; };
+		C00AC09B164B207E00630982 /* ECSSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSSearchController.h; sourceTree = "<group>"; };
+		C00AC09C164B207E00630982 /* ECSSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSSearchController.m; sourceTree = "<group>"; };
+		C00AC09D164B207E00630982 /* ECSSearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ECSSearchController.xib; sourceTree = "<group>"; };
+		C04DAD2D164B3635000F6ACE /* index */ = {isa = PBXFileReference; lastKnownFileType = folder; path = index; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C00AC07D164B200000630982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00AC085164B200100630982 /* UIKit.framework in Frameworks */,
+				C00AC087164B200100630982 /* Foundation.framework in Frameworks */,
+				C00AC089164B200100630982 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C00AC075164B200000630982 = {
+			isa = PBXGroup;
+			children = (
+				C04DAD2A164B3513000F6ACE /* Resources */,
+				C00AC08A164B200100630982 /* EnronCorpusSearch */,
+				C00AC083164B200000630982 /* Frameworks */,
+				C00AC081164B200000630982 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C00AC081164B200000630982 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C00AC080164B200000630982 /* EnronCorpusSearch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C00AC083164B200000630982 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C00AC084164B200100630982 /* UIKit.framework */,
+				C00AC086164B200100630982 /* Foundation.framework */,
+				C00AC088164B200100630982 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C00AC08A164B200100630982 /* EnronCorpusSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C00AC093164B200100630982 /* ECSAppDelegate.h */,
+				C00AC094164B200100630982 /* ECSAppDelegate.m */,
+				C00AC08B164B200100630982 /* Supporting Files */,
+				C00AC09B164B207E00630982 /* ECSSearchController.h */,
+				C00AC09C164B207E00630982 /* ECSSearchController.m */,
+				C00AC09D164B207E00630982 /* ECSSearchController.xib */,
+			);
+			path = EnronCorpusSearch;
+			sourceTree = "<group>";
+		};
+		C00AC08B164B200100630982 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C00AC08C164B200100630982 /* EnronCorpusSearch-Info.plist */,
+				C00AC08D164B200100630982 /* InfoPlist.strings */,
+				C00AC090164B200100630982 /* main.m */,
+				C00AC092164B200100630982 /* EnronCorpusSearch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C04DAD2A164B3513000F6ACE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C04DAD2D164B3635000F6ACE /* index */,
+			);
+			name = Resources;
+			path = EnronCorpusSearch/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C00AC07F164B200000630982 /* EnronCorpusSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00AC098164B200100630982 /* Build configuration list for PBXNativeTarget "EnronCorpusSearch" */;
+			buildPhases = (
+				C00AC07C164B200000630982 /* Sources */,
+				C00AC07D164B200000630982 /* Frameworks */,
+				C00AC07E164B200000630982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnronCorpusSearch;
+			productName = EnronCorpusSearch;
+			productReference = C00AC080164B200000630982 /* EnronCorpusSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C00AC077164B200000630982 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C00AC07A164B200000630982 /* Build configuration list for PBXProject "EnronCorpusSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C00AC075164B200000630982;
+			productRefGroup = C00AC081164B200000630982 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C00AC07F164B200000630982 /* EnronCorpusSearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C00AC07E164B200000630982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00AC08F164B200100630982 /* InfoPlist.strings in Resources */,
+				C00AC09F164B207E00630982 /* ECSSearchController.xib in Resources */,
+				C04DAD2E164B3635000F6ACE /* index in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C00AC07C164B200000630982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00AC091164B200100630982 /* main.m in Sources */,
+				C00AC095164B200100630982 /* ECSAppDelegate.m in Sources */,
+				C00AC09E164B207E00630982 /* ECSSearchController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C00AC08D164B200100630982 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C00AC08E164B200100630982 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C00AC096164B200100630982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C00AC097164B200100630982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C00AC099164B200100630982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnronCorpusSearch/EnronCorpusSearch-Prefix.pch";
+				INFOPLIST_FILE = "EnronCorpusSearch/EnronCorpusSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C00AC09A164B200100630982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnronCorpusSearch/EnronCorpusSearch-Prefix.pch";
+				INFOPLIST_FILE = "EnronCorpusSearch/EnronCorpusSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C00AC07A164B200000630982 /* Build configuration list for PBXProject "EnronCorpusSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00AC096164B200100630982 /* Debug */,
+				C00AC097164B200100630982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C00AC098164B200100630982 /* Build configuration list for PBXNativeTarget "EnronCorpusSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00AC099164B200100630982 /* Debug */,
+				C00AC09A164B200100630982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C00AC077164B200000630982 /* Project object */;
+}
